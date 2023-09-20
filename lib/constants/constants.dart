@@ -8,9 +8,18 @@ const String welcomeText="الَّذِينَ آمَنُوا وَتَطْمَئِ
 
 const String appIcon= "assets/icons/welcome.png";
 const String mosqueImageUrl= "assets/images/image1.svg";
-const String duaaBackgroundImage= "assets/images/duaa.jpg";
 const String prayerBackgroundImage= "assets/images/prayer_background.jpg";
 
+List<String> duaaBackgroundImages=const[
+ "assets/images/duaa.jpg",
+  "assets/images/b1.jpg",
+  "assets/images/b2.jpg",
+  "assets/images/b3.jpg",
+  "assets/images/b4.jpg",
+  "assets/images/b5.jpg",
+
+
+];
 
 const String quranIcon= "assets/icons/quran.png";
 const String tasbihIcon= "assets/icons/tasbih.png";

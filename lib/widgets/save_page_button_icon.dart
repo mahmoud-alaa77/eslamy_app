@@ -12,6 +12,8 @@ class SavePageButtonIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
+
+      highlightColor:  kPrimaryColor.withOpacity(.5),
       onPressed: ()async{
         int value =await SharedPreference().getNumOfPage();
 

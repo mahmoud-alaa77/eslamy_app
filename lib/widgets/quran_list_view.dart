@@ -28,7 +28,6 @@ final int targetIndex;
             ),
             itemCount: (604-targetIndex+1),
           ),
-
         ],
       ),
     );

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import '../helper/shared_preferences.dart';
-
 class SurahPageItem extends StatefulWidget {
   const SurahPageItem({super.key, required this.imageUrl, required this.targetIndex});
 final String imageUrl;
@@ -23,12 +21,10 @@ class _SurahPageItemState extends State<SurahPageItem> {
 
             Image.asset(widget.imageUrl,
               fit: BoxFit.fill,
+
             ),
             GestureDetector(
               onDoubleTap: (){
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text("تم وضع علامة علي هذه الصفحة"))
-                );
                 SharedPreference().saveNumOfPage(widget.targetIndex);
 
               },

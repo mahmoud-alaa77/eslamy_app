@@ -7,7 +7,6 @@ import '../widgets/categories_grid_view.dart';
 import '../widgets/custom_widgets/custom_horizontal_line.dart';
 import '../widgets/custom_widgets/custom_light_widget.dart';
 import '../widgets/duaa_view_item.dart';
-import '../widgets/save_page_button_icon.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});

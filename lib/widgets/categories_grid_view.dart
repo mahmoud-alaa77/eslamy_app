@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:my_quran_app/views/hadith_list_view.dart';
 import 'package:my_quran_app/views/prayer_time_view.dart';
 
@@ -28,6 +29,20 @@ shrinkWrap: true,
           CategoryItem(
             onTap: (){
               Navigator.push(context, MaterialPageRoute(builder: (context) =>  const AllQuranView(title: "القرآن الكريم"),));
+              ScaffoldMessenger.of(context).showSnackBar(
+                   SnackBar(content: Text("اضغط مرتين علي الصفحة التي تود حفظها كأخر صفحة قرأتها",
+                     style: GoogleFonts.amarante(
+                    fontSize: 18,
+                       color: Colors.white
+                  ),),
+                   duration: const Duration(seconds: 4),
+                     backgroundColor: Colors.brown,
+               shape: RoundedRectangleBorder(
+                 borderRadius: BorderRadiusDirectional.circular(24)
+               ),
+                     padding: EdgeInsetsDirectional.symmetric(vertical: 12,horizontal: 16),
+                   )
+              );
             },
             iconUrl: quranIcon,
             title: 'القرآن',

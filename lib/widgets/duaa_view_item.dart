@@ -15,6 +15,11 @@ class DuaaViewItem extends StatelessWidget {
     int randomIndex = random.nextInt(listOfDuaa.length);
     return listOfDuaa[randomIndex];
   }
+  String getRandomDuaaBackGround() {
+    Random random = Random();
+    int randomIndex = random.nextInt(duaaBackgroundImages.length);
+    return duaaBackgroundImages[randomIndex];
+  }
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
@@ -29,7 +34,7 @@ class DuaaViewItem extends StatelessWidget {
             fit: StackFit.expand,
             children: [
               Image.asset(
-                  duaaBackgroundImage,
+                  getRandomDuaaBackGround(),
                   fit:BoxFit.fill,
                   opacity: const AlwaysStoppedAnimation(.8)
               ),
@@ -52,7 +57,7 @@ class DuaaViewItem extends StatelessWidget {
                       child: Text(getRandomDuaa() ,
                         textAlign: TextAlign.right,
                         style: GoogleFonts.amiri(
-                           fontSize: 18,
+                           fontSize: 20,
                             fontWeight: FontWeight.bold
 
                         ),

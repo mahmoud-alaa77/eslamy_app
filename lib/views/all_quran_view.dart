@@ -42,6 +42,7 @@ final String title;
                     builder: (context) => QuranListView(
                       targetIndex: numberOfPage[index]["num"],
                     ),));
+
                 },
                   title:arabicName[index]["name"] ,
                   subtitle: " عدد الايات : ${numOfVerses[index]} " ,
