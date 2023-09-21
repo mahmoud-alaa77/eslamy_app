@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_quran_app/constants/constants.dart';
 
 
 class CategoryItem extends StatelessWidget {
@@ -20,7 +21,15 @@ class CategoryItem extends StatelessWidget {
         //height: MediaQuery.of(context).size.width/3.7,
         decoration: BoxDecoration(
             borderRadius: BorderRadiusDirectional.circular(20),
-            color: Colors.brown.withOpacity(.4)
+            color: Colors.brown.withOpacity(.4),
+          gradient: LinearGradient(
+            colors: [
+              kPrimaryColor,
+              Colors.brown,
+              kPrimaryColor.withOpacity(.8),
+
+            ],
+          )
         ),
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 8),

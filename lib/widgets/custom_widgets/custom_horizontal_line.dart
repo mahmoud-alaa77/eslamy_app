@@ -17,7 +17,7 @@ class CustomHorizontalLine extends StatelessWidget {
             decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(
-                    color: kPrimaryColor,
+                    color: kPrimaryColor.withOpacity(.7),
                     width: 3
                 )
             ),
@@ -37,7 +37,7 @@ class CustomHorizontalLine extends StatelessWidget {
             decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(
-                    color: kPrimaryColor,
+                    color: kPrimaryColor.withOpacity(.7),
                     width: 3
                 )
             ),
@@ -58,7 +58,7 @@ class CustomHorizontalLine extends StatelessWidget {
             decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(
-                    color: kPrimaryColor,
+                    color: kPrimaryColor.withOpacity(.7),
                     width: 3
                 )
             ),

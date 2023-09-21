@@ -16,7 +16,14 @@ final void Function()? onTap;
         width: MediaQuery.of(context).size.width-80,
         decoration: BoxDecoration(
             borderRadius: BorderRadiusDirectional.circular(20),
-            color:kPrimaryColor,
+            gradient: LinearGradient(
+              colors: [
+                kPrimaryColor,
+                Colors.brown,
+                kPrimaryColor.withOpacity(.8),
+
+              ],
+            )
         ),
         child: Center(
           child: Text(

@@ -47,6 +47,7 @@ class DuaaViewItem extends StatelessWidget {
                       style: GoogleFonts.amiri(
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
+                        color: Colors.white
                         //decoration: TextDecoration.underline
                       ),
                     ),
@@ -58,7 +59,8 @@ class DuaaViewItem extends StatelessWidget {
                         textAlign: TextAlign.right,
                         style: GoogleFonts.amiri(
                            fontSize: 20,
-                            fontWeight: FontWeight.bold
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white
 
                         ),
                       ),

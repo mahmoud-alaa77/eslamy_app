@@ -66,7 +66,7 @@ final String title;
                      ),
                       ),
                       leading: CircleAvatar(
-                        backgroundColor: kPrimaryColor,
+                        backgroundColor: kPrimaryColor.withOpacity(.7),
                         radius: 20,
                         child:Text(
                           data["repeat"].toString() ,style: GoogleFonts.amiri(

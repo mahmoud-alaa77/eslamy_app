@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../constants/constants.dart';
+
 
 class CategoryZekrAndHadithItem extends StatelessWidget {
   const CategoryZekrAndHadithItem({super.key, required this.title, this.onTap,  this.color, required this.height});
@@ -22,6 +24,14 @@ onTap: onTap,
         decoration: BoxDecoration(
           borderRadius: BorderRadiusDirectional.circular(20),
           color: color,
+            gradient: LinearGradient(
+              colors: [
+                kPrimaryColor,
+                Colors.brown,
+                kPrimaryColor.withOpacity(.8),
+
+              ],
+            )
         ),child: Center(
         child: Text(title,
           style: GoogleFonts.amiri(

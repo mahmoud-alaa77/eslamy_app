@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../helper/shared_preferences.dart';
+import '../helper/helper.dart';
 class SurahPageItem extends StatefulWidget {
   const SurahPageItem({super.key, required this.imageUrl, required this.targetIndex});
 final String imageUrl;
@@ -25,7 +25,7 @@ class _SurahPageItemState extends State<SurahPageItem> {
             ),
             GestureDetector(
               onDoubleTap: (){
-                SharedPreference().saveNumOfPage(widget.targetIndex);
+                Helper().saveNumOfPage(widget.targetIndex);
 
               },
             ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_quran_app/helper/shared_preferences.dart';
+import 'package:my_quran_app/helper/helper.dart';
 import 'package:my_quran_app/widgets/surah_page_item.dart';
 
 import '../constants/constants.dart';

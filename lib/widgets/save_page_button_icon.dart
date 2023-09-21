@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:my_quran_app/widgets/quran_list_view.dart';
 
 import '../constants/constants.dart';
-import '../helper/shared_preferences.dart';
+import '../helper/helper.dart';
 
 class SavePageButtonIcon extends StatelessWidget {
   const SavePageButtonIcon({super.key});
@@ -15,7 +15,7 @@ class SavePageButtonIcon extends StatelessWidget {
 
       highlightColor:  kPrimaryColor.withOpacity(.5),
       onPressed: ()async{
-        int value =await SharedPreference().getNumOfPage();
+        int value =await Helper().getNumOfPage();
 
 
         Navigator.push(context, MaterialPageRoute(

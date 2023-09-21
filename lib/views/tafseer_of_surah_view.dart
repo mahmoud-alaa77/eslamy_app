@@ -55,7 +55,7 @@ class _TafseerOfSurahViewState extends State<TafseerOfSurahView> {
                   title: Text(listOfAya[index].ayeText,
                   style: GoogleFonts.amiri(
                     fontSize: 25,
-                      color: kPrimaryColor
+                      color: kPrimaryColor.withOpacity(.7)
 
                   ),
                   ),
@@ -66,7 +66,7 @@ class _TafseerOfSurahViewState extends State<TafseerOfSurahView> {
                     ),
                   ),
                   leading: CircleAvatar(
-                    backgroundColor: kPrimaryColor,
+                    backgroundColor: kPrimaryColor.withOpacity(.7),
                     radius: 20,
                     child:Text(listOfAya[index].numOfAya
                       ,style: GoogleFonts.amiri(

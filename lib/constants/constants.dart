@@ -17,22 +17,21 @@ List<String> duaaBackgroundImages=const[
   "assets/images/b3.jpg",
   "assets/images/b4.jpg",
   "assets/images/b5.jpg",
-
+ "assets/images/33.jpg",
 
 ];
 
+//categories icons
 const String quranIcon= "assets/icons/quran.png";
 const String tasbihIcon= "assets/icons/tasbih.png";
 const String kaabaIcon= "assets/icons/kaaba.png";
-const String infaqIcon= "assets/icons/infaq.png";
 const String madinaIcon= "assets/icons/madina.png";
 const String allahIcon= "assets/icons/allah.png";
 const String prayingIcon= "assets/icons/praying.png";
-const String qiblaIcon= "assets/icons/qibla.png";
 const String hadeathIcon= "assets/icons/arabic.png";
 const String tafseerIcon= "assets/icons/tafseer.png";
 
-
+//prayer timing icons
 const String fajrIcon= "assets/icons/fajr.png";
 const String sunriseIcon= "assets/icons/sunrise.png";
 const String dhuhrIcon= "assets/icons/dhuhr.png";
