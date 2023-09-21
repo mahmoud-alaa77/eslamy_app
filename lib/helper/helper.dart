@@ -1,6 +1,6 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
-class SharedPreference {
+class Helper {
 
 
   saveNumOfPage(int numOfPage) async {
@@ -12,7 +12,11 @@ class SharedPreference {
 
   getNumOfPage() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    int? num = prefs.getInt('num_page');
+    int? num = prefs.getInt('num_page') ?? 0;
     return num;
   }
+
+
+  
 }
+
